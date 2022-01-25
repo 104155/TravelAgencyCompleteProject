@@ -1,0 +1,1 @@
+namingConvention: 'camelCase' (whenever possible)

@@ -1,0 +1,76 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Colors */
+/* Font - Styling */
+.istok {
+  font-family: "Istok Web", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.titleStyle {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00e492;
+          text-decoration-color: #00e492;
+  font-family: "Istok Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+/* Hero Title - Highlighted Words */
+/* 
+Newly created innerHTML Elements have to be styled globally 
+because component css is encapsulated thats why styling from ts 
+is not working
+*/
+span {
+  color: #00e492;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* Buttons */
+.btnGreen {
+  background-color: #00e492;
+  color: white;
+}
+
+.btnGreen:hover {
+  color: white;
+  background-color: #008353;
+}
+
+.btnViolet {
+  background-color: #5700e4;
+  color: white;
+}
+
+.btnViolet {
+  background-color: #5700e4;
+  color: white;
+}
+
+footer {
+  background-color: #4d4d4d;
+}
+
+footer p {
+  display: inline;
+  color: #a7a7a7;
+  font-size: 0.8rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #a7a7a7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer a:hover {
+  color: white;
+}
+/*# sourceMappingURL=footer.component.css.map */

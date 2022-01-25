@@ -1,0 +1,38 @@
+@import "../../styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+
+    .heroImgContainer {
+        height: 30em;
+
+        .heroImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .txtPos {
+        position: absolute;
+        width: 40%;
+        top: 30%;
+        left: 10%;
+
+        .heroTitle {
+            font-weight: 600;
+            color: $colorViolet;
+        }
+
+        .heroSubtext {
+            font-style: italic;
+            font-weight: 300;
+            color: $colorViolet;
+        }
+    }
+}

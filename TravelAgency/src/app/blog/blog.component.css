@@ -1,0 +1,27 @@
+/* Hero - Section */
+.hero {
+  position: relative;
+  height: 30rem;
+  background-image: url(../../assets/img/pexels-hero-blog.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .txtPos {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+/* Main - Section */
+main .cardContainer {
+  height: 30rem;
+}
+
+main .cardContainer .cardImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=blog.component.css.map */

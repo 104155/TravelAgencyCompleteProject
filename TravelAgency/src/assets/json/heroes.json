@@ -1,0 +1,30 @@
+[
+    {
+        "page": "home",
+        "title": "We keep your footprint green",
+        "accent": "green",
+        "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "../../assets/img/pexelsHomeHero.jpeg"
+    },
+    {
+        "page": "blog",
+        "title": "Blog of our greenies",
+        "accent": "greenies",
+        "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "../../assets/img/pexelsHeroBlog.jpeg"
+    },
+    {
+        "page": "travels",
+        "title": "Our travel offers",
+        "accent": "travel",
+        "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "../../assets/img/pexelsTravelsHero7.jpeg"
+    },
+    {
+        "page": "cart",
+        "title": "Book your trip",
+        "accent": "trip",
+        "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "../../assets/img/pexelsCartHero.jpeg"
+    }
+]

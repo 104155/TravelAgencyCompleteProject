@@ -1,0 +1,71 @@
+@import "../../styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Main - Section */
+
+main {
+
+    .columnGap {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .sectionContainer {
+        padding-top: 3em;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .sectionPadding {
+        padding-bottom: 5em;
+    }
+
+    .missionStatement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 3em;
+    }
+
+    .part {
+        width: 25em;
+    }
+
+    .rightImgContainer {
+        height: 20em;
+
+        .rightImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .cardsContainer {
+        width: 80%;
+        margin: 0 auto;
+
+        .cardContainer {
+            border: none;
+            width: 80%;
+            height: 20rem;
+            margin: 0 auto;
+
+            .cardImgContainer {
+                width: 10em;
+                height: 10em;
+            }
+
+            .cardImg {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

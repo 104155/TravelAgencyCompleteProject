@@ -1,0 +1,86 @@
+<main>
+
+    <app-hero></app-hero>
+
+    <section class="sectionContainer sectionPadding">
+        <h1 class="text-center titleStyle">Why green travel<br> is a good idea</h1>
+
+        <div class="missionStatement">
+            <div class="part">
+                <div class="col columnGap rightImgContainer">
+                    <img src="../../assets/img/pexelsTrainYard.jpeg" class="rightImg" alt="card image">
+                </div>
+            </div>
+
+            <div class="part">
+                <p class="columnGap roboto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                    eos
+                    et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                    est
+                    Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy
+                    eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam
+                    et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum
+                    dolor
+                    sit amet.</p>
+            </div>
+
+            <div class="part">
+                <p class="col columnGap roboto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam
+                    nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                    vero eos
+                    et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est
+                    Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy
+                    eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                    et
+                    accusam
+                    et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem
+                    ipsum
+                    dolor
+                    sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionPadding">
+        <h1 class="text-center titleStyle">Our Services</h1>
+
+        <div class="row row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 cardsContainer">
+
+            <div *ngFor="let card of cards" class="col">
+                <div class="card h-100 cardContainer">
+
+                    <div class="col mx-auto cardImgContainer">
+                        <img src={{card.image}} class="cardImg" alt="card image">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center my-3 roboto">{{card.title}}</h5>
+                        <p class="card-text roboto">{{card.text}}</p>
+                        <button href="#" type="submit" class="btn btnMain">More</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>

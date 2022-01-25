@@ -1,0 +1,72 @@
+<app-hero></app-hero>
+
+<main class="container my-5">
+
+    <form [formGroup]="formData" (ngSubmit)="calcPrices()"
+        class="arrivalDepature d-flex justify-content-center align-items-center p-2 mb-4 dateForm">
+
+        <div class="dateInput">
+            <label class="pe-3 fs-5 fw-bold roboto labelStyle" for="startDate">Please enter your start date:</label>
+            <input formControlName="startDate" type="text" placeholder="dd.mm.yyyy" id="startDate"
+                class="me-4 rounded-3">
+        </div>
+
+        <div class="dateInput">
+            <label class="pe-3 fs-5 fw-bold roboto labelStyle" for="endDate">and your depature date:</label>
+            <input formControlName="endDate" type="text" placeholder="dd.mm.yyyy" id="endDate" class="me-4 rounded-3">
+        </div>
+
+        <div>
+            <input type="submit" value="Calculate Prices" class="btn btnViolet">
+        </div>
+
+    </form>
+
+    <div class="d-flex flex-wrap g-4 justify-content-center cardsContainer">
+
+        <ng-template [ngIf]="individualTravelList.length != 0" [ngIfElse]="none">
+
+            <div *ngFor="let individualTravel of individualTravelList" class="card h-100 cardContainer">
+                <div class="imgContainer">
+                    <img src={{individualTravel.getImage()}} class="cardImg" alt="card image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{individualTravel.getTitle()}}</h5>
+                    <p class="card-text">{{individualTravel.getDescription()}}</p>
+
+                    <p class="mb-0 card-text">start date:
+                        {{individualTravel.getStartDate().getDate()}}.{{individualTravel.getStartDate().getMonth()}}.{{individualTravel.getStartDate().getFullYear()}}
+                    </p>
+                    <p class="mb-0 card-text">end date:
+                        {{individualTravel.getEndDate().getDate()}}.{{individualTravel.getEndDate().getMonth()}}.{{individualTravel.getEndDate().getFullYear()}}
+                    </p>
+                    <!-- <p class="card-text">number of stays: {{travel.getDuration()}}</p> -->
+                    <p class="card-text fw-bold">Price for {{individualTravel.getDuration()}} nights:
+                        {{individualTravel.getCalcPrice()}}€
+                    </p>
+
+                    <button (click)="addToCart(individualTravel)" type="submit" class="btn btnViolet">Add to
+                        cart</button>
+                </div>
+            </div>
+
+        </ng-template>
+
+        <ng-template #none>
+            <div *ngFor="let travel of travelList" class="col">
+                <div class="card h-100 cardContainer">
+                    <div class="imgContainer">
+                        <img src={{travel.getImage()}} class="card-img-top cardImg" alt="card image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{travel.getTitle()}}</h5>
+                        <p class="card-text">{{travel.getDescription()}}</p>
+                        <p class="card-text fw-bold">Price per night: {{travel.getInitialPrice()}}€</p>
+                        <button (click)="wrongTravel()" type="submit" class="btn btnViolet">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+    </div>
+</main>

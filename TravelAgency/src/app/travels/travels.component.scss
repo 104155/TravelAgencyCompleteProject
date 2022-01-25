@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.dateForm {
+    background-color: $colorGreen;
+
+    [placeholder] {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .labelStyle {
+        color: $colorViolet;
+    }
+}
+
+.cardsContainer {
+  gap: 2em;
+}
+
+.cardContainer {
+    margin: 0 auto;
+    width: 18em;
+    height: 24em;
+
+    .imgContainer {
+        height: 12em;
+
+        .cardImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .arrivalDepature {
+        flex-direction: column !important;
+    }
+
+    .dateInput {
+        margin-bottom: 1em;
+    }
+}

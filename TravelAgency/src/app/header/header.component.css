@@ -1,0 +1,196 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Colors */
+/* Font - Styling */
+.istok {
+  font-family: "Istok Web", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.titleStyle {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00e492;
+          text-decoration-color: #00e492;
+  font-family: "Istok Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+/* Hero Title - Highlighted Words */
+/* 
+Newly created innerHTML Elements have to be styled globally 
+because component css is encapsulated thats why styling from ts 
+is not working
+*/
+span {
+  color: #00e492;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* Buttons */
+.btnGreen {
+  background-color: #00e492;
+  color: white;
+}
+
+.btnGreen:hover {
+  color: white;
+  background-color: #008353;
+}
+
+.btnViolet {
+  background-color: #5700e4;
+  color: white;
+}
+
+.btnViolet {
+  background-color: #5700e4;
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px #6d6d6d;
+          box-shadow: 0px 0px 10px #6d6d6d;
+}
+
+/* Logo - Section */
+.companyLink {
+  display: block;
+  text-decoration: none;
+  margin-left: 7vw;
+}
+
+.companyLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.companyLogoContainer .wholeSuitcase {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.companyLogoContainer .handle1 {
+  margin: 0 auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 1.4em;
+  height: 0.5em;
+  background-color: #00e492;
+}
+
+.companyLogoContainer .handle2 {
+  margin: 0 auto;
+  width: 1em;
+  height: 0.3em;
+  background-color: white;
+}
+
+.companyLogoContainer .suitCase {
+  width: 3.8em;
+  height: 2.2em;
+  border: 0.2rem solid #00e492;
+  border-radius: 0.6em;
+}
+
+.companyLogoContainer .companyName {
+  text-align: center;
+  margin: auto 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.companyLogoContainer .title1 {
+  padding-top: 0.14em;
+  color: #00e492;
+}
+
+.companyLogoContainer .title2 {
+  padding-left: 0.4em;
+  padding-top: 0.8em;
+  color: #5700e4;
+}
+
+/* Navigation - Section */
+.navLink {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+/* Nav Link Animation */
+.navLink::before {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #00e492;
+}
+
+.navLinkGrowUp::before {
+  height: 0%;
+  width: 100%;
+  bottom: -5px;
+}
+
+.navLinkGrowUp:hover::before {
+  height: 5px;
+}
+
+/* Cart - Section */
+.cartContainer {
+  position: relative;
+  display: block;
+  width: 4em;
+  height: 4em;
+  background-color: #5700e4;
+}
+
+.cartContainer .itemsNumber {
+  top: 0.6em;
+  left: 1.1em;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.cartContainer .imgContainer {
+  width: 50%;
+  margin-top: 1.8em;
+  margin-left: 0.8em;
+}
+
+.cartContainer .imgContainer img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Norways Wild Nature Reserve",
+        "destination": "Cederberg",
+        "price": 600,
+        "image": "../../assets/img/pexelsBlogSeaHut.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    {
+        "title": "Hill View",
+        "destination": "Toscana",
+        "price": 220,
+        "image": "../../assets/img/pexelTravelsHotel.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    {
+        "title": "Youth Hostel",
+        "destination": "London",
+        "price": 180,
+        "image": "../../assets/img/pexel-hostel.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    {
+        "title": "Little Poney",
+        "destination": "Bavaria",
+        "price": 750,
+        "image": "../../assets/img/pexelsTravelsVillage.jpeg",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    }
+]

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,cAAc,CAAC;EACX,MAAM,EAAE,IAAI;CAWf;;AAZD,AAGI,cAHU,CAGV,aAAa,CAAC;EACV,MAAM,EAAE,IAAI;CAOf;;AAXL,AAMQ,cANM,CAGV,aAAa,CAGT,QAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "travels.component.scss"
+    ],
+    "names": [],
+    "file": "travels.component.css"
+}

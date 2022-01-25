@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+footer {
+    background-color: $colorDarkGrey;
+
+    p {
+        display: inline;
+        color: $colorLightGrey;
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+        color: $colorLightGrey;
+        transition: 0.4s;
+    }
+
+    a:hover {
+        color: $colorWhite;
+    }
+}

@@ -1,0 +1,158 @@
+@import "../../styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 4em;
+    background: $colorWhite;
+    box-shadow: 0px 0px 10px $colorShadow;
+}
+
+/* Logo - Section */
+
+.companyLink {
+    display: block;
+    text-decoration: none;
+    margin-left: 7vw;
+}
+
+.companyLogoContainer {
+    display: flex;
+
+    .wholeSuitcase {
+        box-sizing: border-box;
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .handle1 {
+        margin: 0 auto;
+        transform: rotate(180deg);
+        width: 1.4em;
+        height: 0.5em;
+        background-color: $colorGreen;
+    }
+
+    .handle2 {
+        margin: 0 auto;
+        width: 1em;
+        height: 0.3em;
+        background-color: $colorWhite;
+    }
+
+    .suitCase {
+        width: 3.8em;
+        height: 2.2em;
+        border: 0.2rem solid $colorGreen;
+        border-radius: 0.6em;
+    }
+
+    .companyName {
+        text-align: center;
+        margin: auto 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .title1 {
+        padding-top: 0.14em;
+        color: $colorGreen;
+    }
+
+    .title2 {
+        padding-left: 0.4em;
+        padding-top: 0.8em;
+        color: $colorViolet;
+    }
+}
+
+/* Navigation - Section */
+
+.navLink {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: $colorBlack;
+}
+
+/* Nav Link Animation */
+
+.navLink::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: $colorGreen;
+}
+
+.navLinkGrowUp::before {
+    height: 0%;
+    width: 100%;
+    bottom: -5px;
+}
+
+.navLinkGrowUp:hover::before {
+    height: 5px;
+}
+
+/* Cart - Section */
+
+.cartContainer {
+    position: fixed;
+    top: 0em;
+    right: 0em;
+    z-index: 999;
+
+    display: none;
+    width: 4em;
+    height: 4em;
+    background-color: $colorViolet;
+
+    .itemsNumber {
+        top: 0.6em;
+        left: 1.1em;
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $colorWhite;
+    }
+
+    .imgContainer {
+        width: 50%;
+        margin-top: 1.8em;
+        margin-left: 0.8em;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            filter: invert(100%);
+        }
+    }
+}
+
+/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 575px) {
+   header {
+       flex-direction: column;
+       height: 8em;
+
+       .companyLink {
+           margin: 0 auto;
+       }
+
+       nav {
+           justify-content: center;
+           margin-left: 0 !important;
+           margin-right: 0 !important;
+       }
+   }
+}

@@ -1,0 +1,22 @@
+<app-hero></app-hero>
+
+<main class="container my-5">
+
+    <div>
+        <p class="fs-3 fw">Items in cart: {{items.length}}</p>
+        <div *ngFor="let item of items" class="w-50 mb-2 d-flex justify-content-between align-items-center">
+            <p class="mb-0">{{item.getTitle()}} | stays: {{item.getDuration()}} | price: {{item.getCalcPrice()}} €</p> 
+            <button (click)="removeFromCart(item)" type="button" class="btn btnRed fs-5 fw-bold py-0 px-2">X</button>
+        </div>
+        <p class="fs-4 fw-bold" *ngIf="discountTxt">Discount: {{discountTxt}}</p>
+        <p class="fs-4 fw-bold">Total: {{total}} €</p>
+    </div>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="checkOut(checkoutForm.value)">
+        <input formControlName="name" type="text" placeholder="Full name" class="me-4">
+        <input formControlName="email" type="email" placeholder="Email" class="me-4">
+
+        <button type="submit" class="btn btnViolet fs-5 py-3 px-5">Book</button>
+    </form>
+
+</main>
